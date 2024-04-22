@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:01
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:02
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
 
@@ -72,7 +72,7 @@
 
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:01
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:02
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
                                                                                      
@@ -3025,6 +3025,9 @@
                     *output, field
                     *nodeoutput
      LINE  2945     U, UR
+                    *output, field
+                    *elementoutput, position=NODES, directions=YES
+                    NFORC
                     *endstep
                     --------------------------------------------------------------------------------------------------------------
                         5   10   15   20   25   30   35   40   45   50   55   60   65   70   75   80   85   90   95  100  105  110
@@ -3408,7 +3411,9 @@
   *output, field
   *output, field
   *output, field
+  *output, field
   *elementoutput
+  *elementoutput, position=NODES, directions=YES
 
  ***WARNING: 12 nodes are either missing intersection with their respective 
              main surface or are outside the adjust zone. The nodes have been 
@@ -3416,16 +3421,21 @@
   *output, field
   *output, field
   *output, field
-  *elementoutput
-  *output, field
-  *output, field
   *output, field
   *elementoutput
+  *elementoutput, position=NODES, directions=YES
+  *output, field
+  *output, field
+  *output, field
+  *output, field
+  *elementoutput
+  *elementoutput, position=NODES, directions=YES
   *Step, name=Static
   *output, field
   *output, field
   *Step, name=Modal
   *frequency
+  *output, field
   *output, field
   *Step, name=Static
   *Step, name=Modal
@@ -3453,7 +3463,27 @@
   *frequency
   *output, field
   *nodeoutput
+  *output, field
+  *elementoutput, position=NODES, directions=YES
   *endstep
+
+ ***WARNING: THE POSITION PARAMETER IS IGNORED FOR OUTPUT VARIABLE NFORC. 
+             RESULTS ARE CALCULATED AND ARE AVAILABLE AT THE NODES ONLY.
+
+ ***WARNING: THE POSITION PARAMETER IS IGNORED FOR OUTPUT VARIABLE NFORC. 
+             RESULTS ARE CALCULATED AND ARE AVAILABLE AT THE NODES ONLY.
+
+ ***WARNING: THE POSITION PARAMETER IS IGNORED FOR OUTPUT VARIABLE NFORC. 
+             RESULTS ARE CALCULATED AND ARE AVAILABLE AT THE NODES ONLY.
+
+ ***WARNING: THE POSITION PARAMETER IS IGNORED FOR OUTPUT VARIABLE NFORC. 
+             RESULTS ARE CALCULATED AND ARE AVAILABLE AT THE NODES ONLY.
+
+ ***WARNING: THE POSITION PARAMETER IS IGNORED FOR OUTPUT VARIABLE NFORC. 
+             RESULTS ARE CALCULATED AND ARE AVAILABLE AT THE NODES ONLY.
+
+ ***WARNING: THE POSITION PARAMETER IS IGNORED FOR OUTPUT VARIABLE NFORC. 
+             RESULTS ARE CALCULATED AND ARE AVAILABLE AT THE NODES ONLY.
   *Step, name=Static
   *static
   *boundary
@@ -3464,7 +3494,7 @@
   *endstep
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:01
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:02
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
      Grenland Bridge - Dynamic analysis                                              
@@ -7815,7 +7845,7 @@
         1211   ROTATION           813
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:01
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:02
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
      Grenland Bridge - Dynamic analysis                                              
@@ -9272,7 +9302,7 @@
             TERMINATE ANALYSIS IF OVERCONSTRAINTS ARE FOUND:  NO             
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:01
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:02
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
      Grenland Bridge - Dynamic analysis                                              
@@ -9318,6 +9348,42 @@
 
 
   THE FOLLOWING  FIELD   OUTPUT WILL BE WRITTEN FOR EVERY     1 EIGENMODES
+
+
+
+   THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL ELEMENTS OF TYPE CONN3D2
+
+          NFORC           
+
+
+
+   THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL ELEMENTS OF TYPE B31
+
+          NFORC           
+
+
+
+   THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL ELEMENTS OF TYPE B31
+
+          NFORC           
+
+
+
+   THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL ELEMENTS OF TYPE B31
+
+          NFORC           
+
+
+
+   THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL ELEMENTS OF TYPE B31
+
+          NFORC           
+
+
+
+   THE FOLLOWING OUTPUT WILL BE WRITTEN FOR ALL ELEMENTS OF TYPE B31
+
+          NFORC           
 
 
 
@@ -14983,6 +15049,11 @@ LOCAL TO GLOBAL NODE AND ELEMENT MAPS
           (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
            VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
 
+ ***WARNING: AN OUTPUT DATABASE REQUEST THAT REQUIRES THE CALCULATOR HAS BEEN 
+             FOUND.  IF VIEWING THE RESULTS BEFORE THE ANALYSIS IS COMPLETE, 
+             PLEASE RUN THE CALCULATOR MANUALLY USING THE CONVERT=ODB AND 
+             OLDJOB= OPTIONS.
+
 
 
                               END OF USER INPUT PROCESSING
@@ -14990,13 +15061,13 @@ LOCAL TO GLOBAL NODE AND ELEMENT MAPS
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =  0.10000    
-       SYSTEM TIME (SEC)    =  0.10000    
-       TOTAL CPU TIME (SEC) =  0.20000    
+       USER TIME (SEC)      =   0.0000    
+       SYSTEM TIME (SEC)    =   0.0000    
+       TOTAL CPU TIME (SEC) =   0.0000    
        WALLCLOCK TIME (SEC) =          0
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:05
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:06
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
      Grenland Bridge - Dynamic analysis                                                        STEP    1  INCREMENT    1
@@ -15090,7 +15161,7 @@ LOCAL TO GLOBAL NODE AND ELEMENT MAPS
       (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:05
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:06
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
      Grenland Bridge - Dynamic analysis                                                        STEP    2  INCREMENT    1
@@ -15486,12 +15557,12 @@ LOCAL TO GLOBAL NODE AND ELEMENT MAPS
 
 
                               ANALYSIS COMPLETE
-                              WITH     43 WARNING MESSAGES ON THE DAT FILE
+                              WITH     50 WARNING MESSAGES ON THE DAT FILE
 
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =  0.20000    
+       USER TIME (SEC)      =  0.30000    
        SYSTEM TIME (SEC)    =  0.10000    
-       TOTAL CPU TIME (SEC) =  0.30000    
+       TOTAL CPU TIME (SEC) =  0.40000    
        WALLCLOCK TIME (SEC) =          1

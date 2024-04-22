@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:05
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:06
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
  Grenland Bridge - Dynamic analysis                                              
@@ -149,7 +149,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         1.00    
 1
 
-   Abaqus 2022                                  Date 19-apr-2024   Time 14:23:05
+   Abaqus 2022                                  Date 22-apr-2024   Time 09:27:06
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
  Grenland Bridge - Dynamic analysis                                              
@@ -434,7 +434,7 @@
        ELAPSED USER TIME (SEC)      =  0.10000    
        ELAPSED SYSTEM TIME (SEC)    =  0.10000    
        ELAPSED TOTAL CPU TIME (SEC) =  0.20000    
-       ELAPSED WALLCLOCK TIME (SEC) =          1
+       ELAPSED WALLCLOCK TIME (SEC) =          0
 
 
           THE ANALYSIS HAS BEEN COMPLETED
@@ -451,7 +451,7 @@
                        1  REORDERING OF EQUATIONS TO MINIMIZE WAVEFRONT
                        0  ADDITIONAL RESIDUAL EVALUATIONS FOR LINE SEARCHES
                        0  ADDITIONAL OPERATOR EVALUATIONS FOR LINE SEARCHES
-                      43  WARNING MESSAGES DURING USER INPUT PROCESSING
+                      50  WARNING MESSAGES DURING USER INPUT PROCESSING
                        0  WARNING MESSAGES DURING ANALYSIS
                        0  ANALYSIS WARNINGS ARE NUMERICAL PROBLEM MESSAGES
                        0  ANALYSIS WARNINGS ARE NEGATIVE EIGENVALUE MESSAGES
@@ -460,7 +460,7 @@
 
 
      JOB TIME SUMMARY
-       USER TIME (SEC)      =  0.20000    
+       USER TIME (SEC)      =  0.30000    
        SYSTEM TIME (SEC)    =  0.10000    
-       TOTAL CPU TIME (SEC) =  0.30000    
+       TOTAL CPU TIME (SEC) =  0.40000    
        WALLCLOCK TIME (SEC) =          1

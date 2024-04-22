@@ -1,0 +1,123 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/Viewer Release 2022 replay file
+# Internal Version: 2021_09_15-19.57.30 176069
+# Run by marku on Mon Apr 22 14:49:27 2024
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=347.578094482422, 
+    height=221.472213745117)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from viewerModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+o2 = session.openOdb(name='grenland_bridge.odb')
+#: Model: C:/Users/marku/Min disk/Skole/Master/Masteroppgave/Buffeting load response/Abaqus/Initial model/grenland_bridge.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       31
+#: Number of Node Sets:          37
+#: Number of Steps:              2
+session.viewports['Viewport: 1'].setValues(displayedObject=o2)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1146.78, 
+    farPlane=1704.64, width=549.364, height=288.472, cameraPosition=(1141.96, 
+    802.954, 897.97), cameraUpVector=(-0.926176, 0.376103, -0.0272764), 
+    cameraTarget=(318.827, -20.1811, 74.834))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1111.95, 
+    farPlane=1761.26, width=532.681, height=279.712, cameraPosition=(1329.47, 
+    234.168, 1047.74), cameraUpVector=(-0.870565, 0.375816, 0.317614), 
+    cameraTarget=(318.827, -20.1813, 74.834))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1106.24, 
+    farPlane=1804.56, width=529.944, height=278.275, cameraPosition=(1553.6, 
+    -498.495, 608.796), cameraUpVector=(-0.597237, 0.295102, 0.745803), 
+    cameraTarget=(320.527, -25.7377, 71.5051))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1126.81, 
+    farPlane=1799.11, width=539.798, height=283.449, cameraPosition=(1589.37, 
+    -660.217, 225.374), cameraUpVector=(-0.412016, 0.155153, 0.89787), 
+    cameraTarget=(321.257, -29.037, 63.6828))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1120.75, 
+    farPlane=1801.79, width=536.894, height=281.924, cameraPosition=(1580.36, 
+    -643.992, 327.118), cameraUpVector=(-0.452259, 0.213777, 0.865888), 
+    cameraTarget=(321.028, -28.6239, 66.2732))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=2)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=1)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+#: Warning: The selected Primary Variable is not available in the current frame for any elements in the current display group.
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC6', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1125.7, 
+    farPlane=1822.52, width=447.906, height=235.196, viewOffsetX=9.22747, 
+    viewOffsetY=0.669271)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1167.84, 
+    farPlane=1748.35, width=464.673, height=244.001, cameraPosition=(1122.38, 
+    -393.328, 1203.81), cameraUpVector=(-0.742139, 0.589951, 0.3181), 
+    cameraTarget=(304.751, -19.6767, 97.2385), viewOffsetX=9.57289, 
+    viewOffsetY=0.694324)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1237.85, 
+    farPlane=1660, width=492.528, height=258.628, cameraPosition=(724.508, 
+    -65.1374, 1462.02), cameraUpVector=(-0.710065, 0.697371, -0.0973684), 
+    cameraTarget=(294.484, -11.1693, 103.787), viewOffsetX=10.1467, 
+    viewOffsetY=0.735945)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1174, 
+    farPlane=1772.15, width=467.124, height=245.288, cameraPosition=(1315.17, 
+    -1018.48, 237.86), cameraUpVector=(-0.322114, 0.2928, 0.900284), 
+    cameraTarget=(303.501, -26.2211, 81.0495), viewOffsetX=9.62333, 
+    viewOffsetY=0.697985)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1149.36, 
+    farPlane=1791.56, width=457.321, height=240.14, cameraPosition=(1434.18, 
+    -874.436, 281.977), cameraUpVector=(-0.317538, 0.343873, 0.883697), 
+    cameraTarget=(308.328, -22.5037, 83.692), viewOffsetX=9.42138, 
+    viewOffsetY=0.683337)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1151.92, 
+    farPlane=1789.35, width=458.34, height=240.675, cameraPosition=(1407.77, 
+    -890.916, 346.718), cameraUpVector=(-0.335853, 0.380693, 0.861554), 
+    cameraTarget=(307.318, -22.8426, 85.7628), viewOffsetX=9.44238, 
+    viewOffsetY=0.68486)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1187.07, 
+    farPlane=1754.21, width=4.42491, height=2.32353, viewOffsetX=24.2062, 
+    viewOffsetY=-11.5451)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC5', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1180.68, 
+    farPlane=1760.59, width=92.4994, height=48.5716, viewOffsetX=20.906, 
+    viewOffsetY=-11.7859)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=2)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1187.39, 
+    farPlane=1720.42, width=2.22941, height=1.17067, viewOffsetX=4.81484, 
+    viewOffsetY=-71.5691)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC6', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC5', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1187.4, 
+    farPlane=1720.41, width=1.85173, height=0.972346, viewOffsetX=4.91683, 
+    viewOffsetY=-71.7074)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC4', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1187.46, 
+    farPlane=1720.35, width=1.32933, height=0.698033, viewOffsetX=5.02208, 
+    viewOffsetY=-71.6561)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC5', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC4', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1175.26, 
+    farPlane=1732.54, width=168.385, height=88.4193, viewOffsetX=28.2254, 
+    viewOffsetY=-71.0217)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=3)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=5)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1172.54, 
+    farPlane=1734.95, width=202.034, height=106.088, viewOffsetX=31.689, 
+    viewOffsetY=-62.0248)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=6)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=7)

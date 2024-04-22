@@ -19,15 +19,15 @@ import os
 import sys
 import shutil
 import numpy as np
-from functions_py2 import *
+from moment_functions import *
 
-job_name = "./Abaqus/Updated model/grenland_bridge51"
+job_name = "./Abaqus/Updated model/grenland_bridge"
 
 o3 = session.openOdb(name=job_name + '.odb')
 odb = session.odbs[job_name + '.odb']
 
-folder = "./Data/Updated model/"
-name = "grenland_bridge51"
+folder = "./Data/Updated model/Moment/"
+name = "grenland_bridge"
 
 get_frequencies(odb, True, name, folder)
 get_modeshapes(odb, "BRIDGE_DECK_NODES_1", "BRIDGE_DECK_NODES_2", True, name, folder)

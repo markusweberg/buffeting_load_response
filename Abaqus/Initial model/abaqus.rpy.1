@@ -1,0 +1,107 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/Viewer Release 2022 replay file
+# Internal Version: 2021_09_15-19.57.30 176069
+# Run by marku on Mon Apr 22 09:46:42 2024
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=347.578094482422, 
+    height=221.472213745117)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from viewerModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+o2 = session.openOdb(name='grenland_bridge.odb')
+#: Model: C:/Users/marku/Min disk/Skole/Master/Masteroppgave/Buffeting load response/Abaqus/Initial model/grenland_bridge.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     2
+#: Number of Meshes:             3
+#: Number of Element Sets:       31
+#: Number of Node Sets:          37
+#: Number of Steps:              2
+session.viewports['Viewport: 1'].setValues(displayedObject=o2)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1085.19, 
+    farPlane=1820.52, width=519.856, height=272.977, cameraPosition=(1671.98, 
+    -243.319, 464.514), cameraUpVector=(-0.461427, 0.548862, 0.697019), 
+    cameraTarget=(318.827, -20.181, 74.8341))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1123.87, 
+    farPlane=1796.91, width=538.386, height=282.708, cameraPosition=(1634.79, 
+    -573.219, 69.825), cameraUpVector=(-0.212833, 0.360518, 0.908146), 
+    cameraTarget=(318.132, -26.3441, 67.4606))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1118.63, 
+    farPlane=1797.48, width=535.876, height=281.389, cameraPosition=(1551.98, 
+    -656.213, 408.931), cameraUpVector=(-0.363773, 0.468434, 0.805133), 
+    cameraTarget=(316.166, -28.3147, 75.5124))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1096.32, 
+    farPlane=1815.32, width=525.187, height=275.777, cameraPosition=(1669.98, 
+    -388.547, 343.994), cameraUpVector=(-0.429518, 0.331987, 0.839821), 
+    cameraTarget=(318.783, -22.3781, 74.0722))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1114.96, 
+    farPlane=1801.42, width=534.118, height=280.467, cameraPosition=(1596.63, 
+    -602.491, 327.65), cameraUpVector=(-0.437125, 0.236783, 0.867672), 
+    cameraTarget=(317.266, -26.8026, 73.7342))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+#: Warning: The selected Primary Variable is not available in the current frame for any elements in the current display group.
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC6', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1155.64, 
+    farPlane=1784.77, width=1.36963, height=0.719196, viewOffsetX=46.6561, 
+    viewOffsetY=-8.34214)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC4', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC5', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC6', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1145.36, 
+    farPlane=1795.05, width=142.221, height=74.6807, viewOffsetX=42.5938, 
+    viewOffsetY=-11.252)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1144.71, 
+    farPlane=1795.7, width=142.141, height=74.6384, viewOffsetX=0.3006, 
+    viewOffsetY=-2.63347)
+session.viewports['Viewport: 1'].view.setValues(viewOffsetX=-31.0451, 
+    viewOffsetY=0.784044)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1113.04, 
+    farPlane=1827.37, width=518.559, height=272.296, viewOffsetX=-10.3373, 
+    viewOffsetY=29.2318)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='U', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=1)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=1117.88, 
+    farPlane=1800.9, width=460.19, height=241.647, viewOffsetX=-0.342793, 
+    viewOffsetY=14.5832)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RF', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='SM', outputPosition=INTEGRATION_POINT, refinement=(
+    COMPONENT, 'SM1'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='SF', outputPosition=INTEGRATION_POINT, refinement=(
+    COMPONENT, 'SF1'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RM', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RF', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='BEAM_STRESS', outputPosition=ELEMENT_NODAL, refinement=(
+    INVARIANT, 'Mises'), )
+#* Beam stress cannot be displayed unless beam profile is rendered.
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RF', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=1)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=1, frame=100)
+#: Warning: The selected Primary Variable is not available in the current step/frame.

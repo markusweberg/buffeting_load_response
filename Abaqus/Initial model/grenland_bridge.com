@@ -80,7 +80,7 @@ options = {
     'restartStep':0,
     'restartWrite':OFF,
     'rezone':OFF,
-    'runCalculator':OFF,
+    'runCalculator':ON,
     'simPack':OFF,
     'soils':OFF,
     'soliter':OFF,
