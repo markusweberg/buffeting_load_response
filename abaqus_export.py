@@ -19,7 +19,7 @@ import os
 import sys
 import shutil
 import numpy as np
-from moment_functions import *
+from moment_sm_functions import *
 
 job_name = "./Abaqus/Updated model/grenland_bridge"
 

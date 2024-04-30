@@ -1,6 +1,6 @@
 1
 
-   Abaqus 2022                                  Date 22-apr-2024   Time 09:35:03
+   Abaqus 2022                                  Date 24-apr-2024   Time 13:42:01
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
  Grenland Bridge - Dynamic analysis                                              
@@ -116,9 +116,9 @@
 
      CHECK POINT  END OF SOLVER       
 
-       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED USER TIME (SEC)      =   0.0000    
        ELAPSED SYSTEM TIME (SEC)    =   0.0000    
-       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
        ELAPSED WALLCLOCK TIME (SEC) =          0
 
                CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
@@ -149,7 +149,7 @@
  STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         1.00    
 1
 
-   Abaqus 2022                                  Date 22-apr-2024   Time 09:35:03
+   Abaqus 2022                                  Date 24-apr-2024   Time 13:42:01
    For use by NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
 
  Grenland Bridge - Dynamic analysis                                              
@@ -216,10 +216,10 @@
  RIGHT BOUNDARY OF THE COMPUTATIONAL INTERVAL   3.95574e+37
  LEFT BOUNDARY OF THE COMPUTATIONAL INTERVAL   -3.95574e+37
   
- LANCZOS RUN TERMINATED. NUMBER OF STEPS:   18
+ LANCZOS RUN TERMINATED. NUMBER OF STEPS:   20
  TERMINATION BASED ON THE COST-PER-EIGENVALUE CRITERION
   
- NUMBER OF ACCEPTED EIGENVALUES   44
+ NUMBER OF ACCEPTED EIGENVALUES   49
   
  ACCEPTED EIGENVALUES
    2.85354e+00  5.05557e+00  5.91614e+00  1.54047e+01  1.60815e+01  2.95608e+01
@@ -229,7 +229,8 @@
    2.22626e+02  2.38335e+02  2.71042e+02  2.71689e+02  2.87671e+02  2.94753e+02
    2.98023e+02  3.50756e+02  3.82340e+02  4.07106e+02  4.30928e+02  4.91046e+02
    5.06596e+02  5.20023e+02  5.36404e+02  5.49057e+02  5.68789e+02  6.25750e+02
-   6.66652e+02  7.13782e+02
+   6.35732e+02  6.66652e+02  7.13782e+02  7.62481e+02  7.64374e+02  8.34741e+02
+   9.02240e+02
   
  FACTORIZATION WITH NEW SHIFT VALUE IS REQUIRED
   
@@ -249,27 +250,27 @@
   
  NUMBER OF EIGENVALUES NEEDED IN THE PRIMARY TRUST INTERVAL  100
   
- NUMBER OF MODES FORMING SENTINEL TO THE RIGHT   42
- SHIFT RIGHT         2.83734e+03
+ NUMBER OF MODES FORMING SENTINEL TO THE RIGHT   49
+ SHIFT RIGHT         3.97148e+03
   
  NUMBER OF MODES FORMING SENTINEL TO THE LEFT     0
  SHIFT LEFT          0.00000e+00
   
  SHIFTING TO THE RIGHT DIRECTION
- NEW SHIFT           2.83734e+03
+ NEW SHIFT           3.97148e+03
   
- NUMBER OF NEGATIVE EIGENVALUES    96
- NUMBER OF POSITIVE EIGENVALUES  6954
- NUMBER OF NEGATIVE EIGENVALUES NOT ASSOCIATED WITH LAGRANGE MULTIPLIERS    96
+ NUMBER OF NEGATIVE EIGENVALUES   109
+ NUMBER OF POSITIVE EIGENVALUES  6941
+ NUMBER OF NEGATIVE EIGENVALUES NOT ASSOCIATED WITH LAGRANGE MULTIPLIERS   109
  NUMBER OF LAGRANGE MULTIPLIERS     0
   
  NEW LANCZOS RUN IS REQUIRED
   
  TYPE OF RUN: EXPAND THE TRUST INTERVAL TO THE RIGHT
- EIGENVALUES NEEDED TO THE RIGHT     4
- EIGENVALUES NEEDED TO THE LEFT     52
- RIGHT BOUNDARY OF THE INTERVAL   3.95574e+37
- LEFT BOUNDARY OF THE INTERVAL    6.25750e+02
+ EIGENVALUES NEEDED TO THE RIGHT     0
+ EIGENVALUES NEEDED TO THE LEFT     60
+ RIGHT BOUNDARY OF THE INTERVAL   3.97148e+03
+ LEFT BOUNDARY OF THE INTERVAL    9.02240e+02
   
  TRUST INTERVALS AFTER FACTORIZATION AND COMPRESSION
   
@@ -277,17 +278,17 @@
  | KEY | INSIDE |      INERTIAS     |  SENTINELS  |   OUTSIDE   |  NEED TO FIND      |
  |      ENDS OF INTERVAL     |     ENDS OF SENTINEL      |   COMPUTATIONAL INTERVAL  |
  -------------------------------------------------------------------------------------
- |  +  |      0 |        0        0 |     0    42 |     0    44 |      0   100       |
- | -3.95574e+37  0.00000e+00 | -3.95574e+37  6.25750e+02 | -3.95574e+37  3.95574e+37 |
+ |  +  |      0 |        0        0 |     0    49 |     0    49 |      0   100       |
+ | -3.95574e+37  0.00000e+00 | -3.95574e+37  9.02240e+02 | -3.95574e+37  3.95574e+37 |
  -------------------------------------------------------------------------------------
- |  -  |      0 |       96       96 |     0     0 |     0     0 |     52     4       |
- |  2.83734e+03  2.83734e+03 |  2.83734e+03  2.83734e+03 |  6.25750e+02  3.95574e+37 |
+ |  -  |      0 |      109      109 |     0     0 |     0     0 |     60     0       |
+ |  3.97148e+03  3.97148e+03 |  3.97148e+03  3.97148e+03 |  9.02240e+02  3.97148e+03 |
  -------------------------------------------------------------------------------------
   
- LANCZOS RUN TERMINATED. NUMBER OF STEPS:   18
+ LANCZOS RUN TERMINATED. NUMBER OF STEPS:   15
  TERMINATION BASED ON THE COST-PER-EIGENVALUE CRITERION
   
- NUMBER OF ACCEPTED EIGENVALUES   74
+ NUMBER OF ACCEPTED EIGENVALUES   62
   
  ACCEPTED EIGENVALUES
    2.85354e+00  5.05557e+00  5.91614e+00  1.54047e+01  1.60815e+01  2.95608e+01
@@ -297,12 +298,10 @@
    2.22626e+02  2.38335e+02  2.71042e+02  2.71689e+02  2.87671e+02  2.94753e+02
    2.98023e+02  3.50756e+02  3.82340e+02  4.07106e+02  4.30928e+02  4.91046e+02
    5.06596e+02  5.20023e+02  5.36404e+02  5.49057e+02  5.68789e+02  6.25750e+02
-   6.66652e+02  7.13782e+02  1.93011e+03  1.99742e+03  2.00449e+03  2.04190e+03
-   2.11446e+03  2.16222e+03  2.17973e+03  2.19470e+03  2.24882e+03  2.44019e+03
-   2.57920e+03  2.63375e+03  2.68381e+03  2.71568e+03  2.75414e+03  2.95722e+03
-   3.17953e+03  3.30502e+03  3.42657e+03  3.48717e+03  3.49664e+03  3.59944e+03
-   3.69373e+03  3.73875e+03  3.74606e+03  3.76422e+03  3.80052e+03  3.82269e+03
-   4.02858e+03  4.05286e+03
+   6.35732e+02  6.66652e+02  7.13782e+02  7.62481e+02  7.64374e+02  8.34741e+02
+   9.02240e+02  2.95722e+03  3.17953e+03  3.30502e+03  3.42657e+03  3.48717e+03
+   3.49664e+03  3.59944e+03  3.69373e+03  3.73875e+03  3.74606e+03  3.76422e+03
+   3.80052e+03  3.82269e+03
   
  FACTORIZATION WITH NEW SHIFT VALUE IS REQUIRED
   
@@ -314,38 +313,38 @@
  | KEY | INSIDE |      INERTIAS     |  SENTINELS  |   OUTSIDE   |  NEED TO FIND      |
  |      ENDS OF INTERVAL     |     ENDS OF SENTINEL      |   COMPUTATIONAL INTERVAL  |
  -------------------------------------------------------------------------------------
- |  +  |      0 |        0        0 |     0    42 |     0    44 |      0   100       |
- | -3.95574e+37  0.00000e+00 | -3.95574e+37  6.25750e+02 | -3.95574e+37  3.95574e+37 |
+ |  +  |      0 |        0        0 |     0    49 |     0    49 |      0   100       |
+ | -3.95574e+37  0.00000e+00 | -3.95574e+37  9.02240e+02 | -3.95574e+37  3.95574e+37 |
  -------------------------------------------------------------------------------------
- |  -  |      0 |       96       96 |     0     0 |     0     0 |     52     4       |
- |  2.83734e+03  2.83734e+03 |  2.83734e+03  2.83734e+03 |  6.25750e+02  3.95574e+37 |
+ |  -  |      0 |      109      109 |     0     0 |     0     0 |     60     0       |
+ |  3.97148e+03  3.97148e+03 |  3.97148e+03  3.97148e+03 |  9.02240e+02  3.97148e+03 |
  -------------------------------------------------------------------------------------
   
  DATA FOR CHOOSING SHIFT
   
  NUMBER OF EIGENVALUES NEEDED IN THE PRIMARY TRUST INTERVAL  100
   
- NUMBER OF MODES FORMING SENTINEL TO THE RIGHT   15
- SHIFT RIGHT         3.45687e+03
+ NUMBER OF MODES FORMING SENTINEL TO THE RIGHT    0
+ SHIFT RIGHT         3.97148e+03
   
- NUMBER OF MODES FORMING SENTINEL TO THE LEFT    15
- SHIFT LEFT          1.03196e+03
+ NUMBER OF MODES FORMING SENTINEL TO THE LEFT    13
+ SHIFT LEFT          1.95310e+03
   
  SHIFT IS DETERMINED IN ORDER TO CLOSE GAP BETWEEN TRUST INTERVALS
- NEW SHIFT           1.09898e+03
+ NEW SHIFT           1.63344e+03
   
- NUMBER OF NEGATIVE EIGENVALUES    53
- NUMBER OF POSITIVE EIGENVALUES  6997
- NUMBER OF NEGATIVE EIGENVALUES NOT ASSOCIATED WITH LAGRANGE MULTIPLIERS    53
+ NUMBER OF NEGATIVE EIGENVALUES    77
+ NUMBER OF POSITIVE EIGENVALUES  6973
+ NUMBER OF NEGATIVE EIGENVALUES NOT ASSOCIATED WITH LAGRANGE MULTIPLIERS    77
  NUMBER OF LAGRANGE MULTIPLIERS     0
   
  NEW LANCZOS RUN IS REQUIRED
   
  TYPE OF RUN: FILLING GAPS
- EIGENVALUES NEEDED TO THE RIGHT    28
- EIGENVALUES NEEDED TO THE LEFT      9
- RIGHT BOUNDARY OF THE INTERVAL   1.93011e+03
- LEFT BOUNDARY OF THE INTERVAL    6.25750e+02
+ EIGENVALUES NEEDED TO THE RIGHT    19
+ EIGENVALUES NEEDED TO THE LEFT     28
+ RIGHT BOUNDARY OF THE INTERVAL   2.95722e+03
+ LEFT BOUNDARY OF THE INTERVAL    9.02240e+02
   
  TRUST INTERVALS AFTER FACTORIZATION AND COMPRESSION
   
@@ -353,20 +352,20 @@
  | KEY | INSIDE |      INERTIAS     |  SENTINELS  |   OUTSIDE   |  NEED TO FIND      |
  |      ENDS OF INTERVAL     |     ENDS OF SENTINEL      |   COMPUTATIONAL INTERVAL  |
  -------------------------------------------------------------------------------------
- |  +  |      0 |        0        0 |     0    42 |     0    44 |      0   100       |
- | -3.95574e+37  0.00000e+00 | -3.95574e+37  6.25750e+02 | -3.95574e+37  3.95574e+37 |
+ |  +  |      0 |        0        0 |     0    49 |     0    49 |      0   100       |
+ | -3.95574e+37  0.00000e+00 | -3.95574e+37  9.02240e+02 | -3.95574e+37  3.95574e+37 |
  -------------------------------------------------------------------------------------
- |  -  |      0 |       96       96 |    15    15 |    15    15 |     52     4       |
- |  2.83734e+03  2.83734e+03 |  1.93011e+03  4.05286e+03 |  6.25750e+02  3.95574e+37 |
+ |  -  |      0 |      109      109 |    13     0 |    13     0 |     60     0       |
+ |  3.97148e+03  3.97148e+03 |  2.95722e+03  3.97148e+03 |  9.02240e+02  3.97148e+03 |
  -------------------------------------------------------------------------------------
- |  -  |      0 |       53       53 |     0     0 |     0     0 |      9    28       |
- |  1.09898e+03  1.09898e+03 |  1.09898e+03  1.09898e+03 |  6.25750e+02  1.93011e+03 |
+ |  -  |      0 |       77       77 |     0     0 |     0     0 |     28    19       |
+ |  1.63344e+03  1.63344e+03 |  1.63344e+03  1.63344e+03 |  9.02240e+02  2.95722e+03 |
  -------------------------------------------------------------------------------------
   
- LANCZOS RUN TERMINATED. NUMBER OF STEPS:   14
+ LANCZOS RUN TERMINATED. NUMBER OF STEPS:   12
  ALL THE EIGENVALUES REQUESTED ON THIS LANCZOS RUN ARE FOUND
   
- NUMBER OF ACCEPTED EIGENVALUES  111
+ NUMBER OF ACCEPTED EIGENVALUES  109
   
  ACCEPTED EIGENVALUES
    2.85354e+00  5.05557e+00  5.91614e+00  1.54047e+01  1.60815e+01  2.95608e+01
@@ -387,11 +386,11 @@
    2.44019e+03  2.57920e+03  2.63375e+03  2.68381e+03  2.71568e+03  2.75414e+03
    2.95722e+03  3.17953e+03  3.30502e+03  3.42657e+03  3.48717e+03  3.49664e+03
    3.59944e+03  3.69373e+03  3.73875e+03  3.74606e+03  3.76422e+03  3.80052e+03
-   3.82269e+03  4.02858e+03  4.05286e+03
+   3.82269e+03
   
- FACTORIZATION WITH NEW SHIFT VALUE IS REQUIRED
+ THE REQUIRED NUMBER OF EIGENVALUES IS FOUND
   
- TRUST INTERVALS AFTER LANCZOS RUN AND COMPRESSION
+ FINAL TRUST INTERVALS AFTER SUCCESSFUL LANCZOS RUN
   
  NUMBER OF TRUST INTERVALS    1
   
@@ -399,39 +398,8 @@
  | KEY | INSIDE |      INERTIAS     |  SENTINELS  |   OUTSIDE   |  NEED TO FIND      |
  |      ENDS OF INTERVAL     |     ENDS OF SENTINEL      |   COMPUTATIONAL INTERVAL  |
  -------------------------------------------------------------------------------------
- |  +  |     96 |        0       96 |     0    15 |     0    15 |      0     4       |
- | -3.95574e+37  2.83734e+03 | -3.95574e+37  4.05286e+03 | -3.95574e+37  3.95574e+37 |
- -------------------------------------------------------------------------------------
- SENTINEL WAS NOT INCLUDED INTO THE TRUST INTERVAL LIST. SHIFT   1.09898e+03
-  
- DATA FOR CHOOSING SHIFT
-  
- NUMBER OF EIGENVALUES NEEDED IN THE PRIMARY TRUST INTERVAL    4
-  
- NUMBER OF MODES FORMING SENTINEL TO THE RIGHT   28
- SHIFT RIGHT         2.53190e+03
-  
- NUMBER OF MODES FORMING SENTINEL TO THE LEFT     9
- SHIFT LEFT         -1.46258e+02
-  
- SHIFTING TO THE RIGHT DIRECTION
- NEW SHIFT           3.45687e+03
-  
- NUMBER OF NEGATIVE EIGENVALUES   100
- NUMBER OF POSITIVE EIGENVALUES  6950
- NUMBER OF NEGATIVE EIGENVALUES NOT ASSOCIATED WITH LAGRANGE MULTIPLIERS   100
- NUMBER OF LAGRANGE MULTIPLIERS     0
-  
- THE REQUIRED NUMBER OF EIGENVALUES IS FOUND
-  
- FINAL TRUST INTERVAL
-  
- -------------------------------------------------------------------------------------
- | KEY | INSIDE |      INERTIAS     |  SENTINELS  |   OUTSIDE   |  NEED TO FIND      |
- |      ENDS OF INTERVAL     |     ENDS OF SENTINEL      |   COMPUTATIONAL INTERVAL  |
- -------------------------------------------------------------------------------------
- |  +  |    100 |        0      100 |     0     0 |     0     0 |      0     0       |
- | -3.95574e+37  3.45687e+03 | -3.95574e+37  3.45687e+03 | -3.95574e+37  3.45687e+03 |
+ |  +  |    109 |        0      109 |     0     0 |     0     0 |      0     0       |
+ | -3.95574e+37  3.97148e+03 | -3.95574e+37  3.97148e+03 | -3.95574e+37  3.97148e+03 |
  -------------------------------------------------------------------------------------
   
  FIRST EIGENVALUE REQUESTED BY THE USER     1
@@ -457,16 +425,16 @@
   
  EIGENVALUE EXTRACTION USING THE LANCZOS EIGENSOLVER IS COMPLETE
  NUMBER OF LANCZOS RUNS       :   3
- NUMBER OF LANCZOS STEPS      :  50
- NUMBER OF FACTORIZATIONS     :   4
- NUMBER OF BACK SUBSTITUTIONS :  51
+ NUMBER OF LANCZOS STEPS      :  47
+ NUMBER OF FACTORIZATIONS     :   3
+ NUMBER OF BACK SUBSTITUTIONS :  48
 
      CHECK POINT  END OF SOLVER       
 
-       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED USER TIME (SEC)      =  0.20000    
        ELAPSED SYSTEM TIME (SEC)    =   0.0000    
-       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
-       ELAPSED WALLCLOCK TIME (SEC) =          1
+       ELAPSED TOTAL CPU TIME (SEC) =  0.20000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
 
 
           THE ANALYSIS HAS BEEN COMPLETED
@@ -477,13 +445,13 @@
      TOTAL OF          2  INCREMENTS
                        0  CUTBACKS IN AUTOMATIC INCREMENTATION
                        1  ITERATIONS INCLUDING CONTACT ITERATIONS IF PRESENT
-                      56  PASSES THROUGH THE EQUATION SOLVER OF WHICH 
-                       5  INVOLVE MATRIX DECOMPOSITION, INCLUDING
+                      52  PASSES THROUGH THE EQUATION SOLVER OF WHICH 
+                       4  INVOLVE MATRIX DECOMPOSITION, INCLUDING
                        0  DECOMPOSITION(S) OF THE MASS MATRIX
                        1  REORDERING OF EQUATIONS TO MINIMIZE WAVEFRONT
                        0  ADDITIONAL RESIDUAL EVALUATIONS FOR LINE SEARCHES
                        0  ADDITIONAL OPERATOR EVALUATIONS FOR LINE SEARCHES
-                      50  WARNING MESSAGES DURING USER INPUT PROCESSING
+                      51  WARNING MESSAGES DURING USER INPUT PROCESSING
                        0  WARNING MESSAGES DURING ANALYSIS
                        0  ANALYSIS WARNINGS ARE NUMERICAL PROBLEM MESSAGES
                        0  ANALYSIS WARNINGS ARE NEGATIVE EIGENVALUE MESSAGES
@@ -493,6 +461,6 @@
 
      JOB TIME SUMMARY
        USER TIME (SEC)      =  0.30000    
-       SYSTEM TIME (SEC)    =   0.0000    
-       TOTAL CPU TIME (SEC) =  0.30000    
+       SYSTEM TIME (SEC)    =  0.10000    
+       TOTAL CPU TIME (SEC) =  0.40000    
        WALLCLOCK TIME (SEC) =          1
