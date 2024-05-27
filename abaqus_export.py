@@ -19,14 +19,17 @@ import os
 import sys
 import shutil
 import numpy as np
-from moment_sm_functions import *
+from deformation_functions import *
 
-job_name = "./Abaqus/Updated model/grenland_bridge"
+model = "Updated"
+output = "Deformation"
+
+job_name = "./Abaqus/" + model + " model/grenland_bridge"
 
 o3 = session.openOdb(name=job_name + '.odb')
 odb = session.odbs[job_name + '.odb']
 
-folder = "./Data/Updated model/Moment/"
+folder = "./Data/" + model + " model/" + output + "/"
 name = "grenland_bridge"
 
 get_frequencies(odb, True, name, folder)
